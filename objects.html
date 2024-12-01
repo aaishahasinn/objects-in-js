@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>objects in js</title>
+
+
+</head>
+
+<body>
+    <p id="print"></p>
+    <p id="harry_potter"></p>
+    <script>
+        var student={
+            student_name: 'Aisha',
+            student_ID: 45789,
+            roll_number: 9,
+            phone_number: 171618118,
+            grade: 7,
+            fave_color: 'black and white',
+            school_name: 'BAF Shaheen College, Chattogram'
+        };
+        document.getElementById("print").innerHTML= student.student_name;
+        
+        document.getElementById("print").innerHTML= " her name is " + student.school_name + " she is a student of grade " + student.grade + " she studies at " + student.school_name + " her roll number is " + student.roll_number + " her student ID is " + student.student_ID + "her contact information is " + student.phone_number + " her favorite color is " + student.fave_color;
+
+        //method to display book details using constant
+
+        const book={
+           book_title: 'harry potter book 3',
+           book_author: 'J.K Rowling',
+           book_genre: 'fiction',
+           number_of_pages: 234,
+           number_of_sold_copies: '2 million' 
+        };
+    document.getElementById("harry_potter").innerHTML= book.book_title;
+    
+    //objects using built in math 
+    var value=Math.abs(10)
+    document.write(value);
+    document.write("<br>");
+
+    document.write(Math.asin(-1));
+    document.write("<br>");
+
+    document.write(Math.acos(1));
+    document.write("<br>");
+
+    document.write(Math.atan(.5));
+    document.write("<br>");
+
+    //more math functions
+    document.write(Math.sqrt(400));
+    document.write("<br>");
+
+    document.write(Math.pow(2,3));
+    document.write("<br>");
+
+    document.write(Math.max(4,54,797,23));
+    document.write("<br>");
+
+    document.write(Math.min(4,54,797,23));
+    document.write("<br>");
+  
+    </script>
+
+</body>
+
+</html>
